@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>회원 가입 페이지</title>
+</head>
+<body>
+    <form>
+        <table>
+            <!-- 테이블 제목 -->
+            <thead>
+                <!-- 가운대로 배치하기 위해 colspan을 통해 병합시켰다.-->
+                <th colspan="2">회원가입<hr /></th><!-- 제목 밑 실선 -->
+            </thead>
+            <!-- 아이디 입력 부분 -->
+            <tr>
+                <!-- 라벨을 사용하여 글자 클릭 시 텍스트로 이동 -->
+                <td><label for="uid">아이디</label> </td>
+                <td><input type="text" id="uid" name="uid" /></td>
+            </tr>
+            <!-- 비밀번호 입력 부분 password를 사용하여 *로 표시됨 -->
+            <tr>
+                <td><label for="upw1">비밀번호</label> </td><td>
+                <input type="password" id="upw1" name="upw1" /></td>
+            </tr>
+            <!-- 비밀번호를 확인한다 위와 같은 내용 -->
+            <tr>
+                <td><label for="upw2">비밀번호 확인</label> 
+                </td><td><input type="password" id="upw2" name="upw2" /></td>
+            </tr>            
+            <!-- 성별 선택 부분 라디오를 사용 name을 같은걸로 해서 하나만 선택 가능 -->
+            <tr>
+                <td>성별</td>
+                <td>
+                    <input id="male" type="radio" value="m" name="gender" />
+                    <label for="man">남자</label>&nbsp;
+                    <input id="female" type="radio" value="w" name="gender" /> 
+                    <label for="female">여자</label>
+                </td>
+            </tr>
+            <!-- date타입을 사용하여 폼에서 날짜 선택 가능 -->
+            <tr>
+                <td>생일 </td>
+                <td><input type="date" name="date"></td>
+            </tr>
+            <!-- 이메일 타입을 사용하지 않고 텍스트와 셀렉트를 사용하여 받음 -->
+            <tr>
+                <td><label for="email">이메일</label></td>
+                <td><input type="text"id="email" name="email"size="7" />@
+                    <select name="site">
+                        <option>google.com</option>
+                        <option>naver.com</option>
+                        <option>daum.net</option>
+                        <option>nate.com</option>
+                    </select>
+                    <input type="text" name="site"size="7" value=""/>
+                    <input type="button" value="중복확인" />
+                </td>
+            </tr>
+            <!-- 휴대전화 번호 입력 텍스트 3개를 만들어 자료를 받음 -->
+            <tr>
+                <td><label for="phon1">휴대폰</label></td>
+                <td>
+                    <!-- maxlength를 사용하여 전화번호 길이를 넘지 못하게 함 -->
+                    <input type="text" id="phon1" name="phon1" maxlength="3" size="3"/>-
+                    <input type="text" name="phon2" maxlength="4" size="3"/>-
+                    <input type="text" name="phon3" maxlength="4" size="3"/>
+                </td>
+            </tr>
+            <!-- 집전화 번호 입력 휴대전화 부분과 내용이 같음 -->
+            <tr>
+                <td><label for="tel1">전화번호</label></td>
+                <td>
+                    <input type="text" id="tel1" name="tel1" maxlength="3" size="3" />-
+                    <input type="text" name="tel2" maxlength="4" size="3" />-
+                    <input type="text" name="tel3" maxlength="4" size="3" />
+                </td>
+            </tr>
+            <!-- 전송버튼 -->
+            <tr>
+                <!-- 가운대로 배치하기 위해 colspan을 통해 병합시켰다.-->
+                <td colspan="2" align="center"><input type="submit" value="&nbsp;&nbsp;전송&nbsp;&nbsp;"  /></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
