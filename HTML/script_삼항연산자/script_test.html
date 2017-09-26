@@ -1,0 +1,30 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>삼항연산자 예제</title>
+</head>
+<body>
+    <script>
+        //prompt를 통해 숫자를 입력 받는다.
+        var num = prompt("0을 제외한 정수를 입력하시오");
+        //0은 5의 배수가 아님에도 5로 나눌시 나머지가 0이니 제외한다.
+        if (num == 0) {
+            document.write("0은 잘못된 입력 입니다.");
+        } else {
+            //입력받은 문자를 삼항 연산자를 통해 5로 나누었을때 
+            //나머지값이 0인지 아닌지에 따라 문자열을 부여한다.
+            var bool1 = (num % 5 == 0) ? "맞습니다." : "아닙니다.";
+            document.write("입력하신 숫자는 5의 배수가 " + bool1 + "<br>");
+            var bool2;
+            if (num % 5 == 0) {
+                bool2 = "맞습니다.";
+                document.write("입력하신 숫자는 5의 배수가 " + bool2);
+            } else {
+                bool2 = "아닙니다.";
+                document.write("입력하신 숫자는 5의 배수가 " + bool2);
+            }
+        }       
+    </script>    
+</body>
+</html>
