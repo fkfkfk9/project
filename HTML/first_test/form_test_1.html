@@ -1,0 +1,197 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>화면 구현 세스트</title>
+    <style>
+        #underline{
+            text-decoration-line:underline;
+            text-decoration-color:red;            
+        }
+        table{
+            border-top:1px solid black;
+        }
+        #btn {
+            border-top: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <table >         
+            <!-- 이름 입력 부분 -->
+            <tr >
+                <!-- 라벨을 사용하여 글자 클릭 시 텍스트로 이동 -->
+                <td><label for="uname">이름</label> </td>
+                <td><input type="text" id="uname" name="uname" /></td>
+            </tr>
+            <!-- 주민등록번호 입력 부분 -->
+            <tr>
+                <!-- 라벨을 사용하여 글자 클릭 시 텍스트로 이동 -->
+                <td><label for="ukey1">주민등록번호</label> </td>
+                <td><input type="text" id="ukey1" name="ukey1" /> -                
+                <input type="password" id="ukey2" name="ukey2" /></td>
+            </tr>
+            <!-- 아이디 입력 부분 -->
+            <tr>
+                <!-- 라벨을 사용하여 글자 클릭 시 텍스트로 이동 -->
+                <td><label for="uid">아이디</label> </td>
+                <td><input type="text" id="uid" name="uid" />
+                <span>영문/숫자포함 8자 이상 </span>
+                <span id=underline><b>중복 검사</b></span></td>
+            </tr>
+            <!-- 비밀번호 입력 부분 password를 사용하여 *로 표시됨 -->
+            <tr>
+                <td><label for="upw1">비밀번호</label> </td>
+                <td>
+                    <input type="password" id="upw1" name="upw1" />
+                    <span>영문/숫자포함 8자 이상 </span>
+                </td>
+            </tr>
+            <!-- 비밀번호를 확인한다 위와 같은 내용 -->
+            <tr>
+                <td>
+                    <label for="upw2">비밀번호 확인</label>
+                </td>
+                <td><input type="password" id="upw2" name="upw2" /></td>
+            </tr>
+            <!-- 질문 부분 -->
+            <tr>
+                <td><label for="upwqu">비빌먼호 힌트/답변</label> </td>
+                <td>
+                    <select name="upwqu">
+                        <option>선택하세요.</option>
+                        <option>당신이 졸업한 초등학교 이름은?</option>
+                        <option>당신의 보물 1호는?</option>
+                        <option>당신이 가장 좋아하는 스포츠팀은?</option>
+                        <option>당신이 가장 감명깊게 본 영화 이름은?</option>
+                    </select>
+                </td>
+            </tr>
+            <!-- 답변 입력 부분 -->
+            <tr>
+                <!-- 라벨을 사용하여 글자 클릭 시 텍스트로 이동 -->
+                <td><label for="urepl">답변</label> </td>
+                <td><input type="text" id="urepl" name="urepl" /></td>
+            </tr>
+            <!-- 이메일 타입을 사용하지 않고 텍스트와 셀렉트를 사용하여 받음 -->
+            <tr>
+                <td><label for="email1">이메일</label></td>
+                <td>
+                    <input type="text" id="email1" name="email1" size="10" /> @
+                    <input type="text" id="email2" name="email2" size="10" />
+                    <select name="site">
+                        <option>직접입력</option>
+                        <option>google.com</option>
+                        <option>naver.com</option>
+                        <option>daum.net</option>
+                        <option>nate.com</option>
+                    </select>
+                </td>
+            </tr>
+            <!--주소 입력 부분-->
+            <tr>
+                <td><label for="uaddr1">주소</label></td>
+                <td>
+                    우편번호<input type="text" id="uaddr1" name="uaddr1" size="4" /> -
+                    <input type="text" id="uaddr2" name="uaddr2" size="4" /><br />
+                    기본주소<input type="text" id="basicaddr" name="basicaddr" size="15" /><br />
+                    나머지주소<input type="text" id="addaddr1" name="addaddr" size="15" />
+                </td>
+            </tr>
+            <!-- 집전화 번호 입력 휴대전화 부분과 내용이 같음 -->
+            <tr>
+                <td><label for="tel1">전화번호</label></td>
+                <td>
+                    <input type="text" id="tel1" name="tel1" maxlength="3" size="3" /> -
+                    <input type="text" name="tel2" maxlength="4" size="3" /> -
+                    <input type="text" name="tel3" maxlength="4" size="3" />
+                </td>
+            </tr>
+            <!-- 휴대전화 번호 입력 텍스트 3개를 만들어 자료를 받음 -->
+            <tr>
+                <td><label for="phon1">휴대폰</label></td>
+                <td>
+                    <!-- maxlength를 사용하여 전화번호 길이를 넘지 못하게 함 -->
+                    <input type="text" id="phon1" name="phon1" maxlength="3" size="3" /> -
+                    <input type="text" name="phon2" maxlength="4" size="3" /> -
+                    <input type="text" name="phon3" maxlength="4" size="3" />
+                </td>
+            </tr>
+            <!-- 직업 부분 셀렉트 사용 -->
+            <tr>
+                <td><label for="ujob">직업</label></td>
+                <td>                    
+                <select name="ujob">
+                    <option>선택하세요.</option>
+                    <option>무직</option>
+                    <option>주부</option>
+                    <option>군인</option>
+                    <option>공무원</option>
+                </select>
+                </td>
+            </tr>
+            <!-- 메일/sns 수신여부 라디오를 사용 name을 같은걸로 해서 하나만 선택 가능 -->
+            <tr>
+                <td>메일/sns 정보 수신</td>
+                <td>
+                    <input id="uok" type="radio" value="o" name="sns" checked />
+                    <label for="uok">수신</label>&nbsp;
+                    <input id="uno" type="radio" value="n" name="sns" />
+                    <label for="uno">수신거부</label>
+                </td>
+            </tr>                       
+            <!-- 관신분야 라디오와 같은 방식으로 만듬 여러게 선택 가능 -->
+            <tr>
+                <td>관심분야</td>
+                <td>
+                    <input id="java" type="checkbox" value="java" />
+                    <label for="java">JAVA</label>&nbsp;
+                    <input id="jsp" type="checkbox" value="jsp" />
+                    <label for="jsp">JSP</label>&nbsp;
+                    <input id="servlet" type="checkbox" value="servlet" />
+                    <label for="servlet">Servlet</label>&nbsp;
+                    <input id="spring" type="checkbox" value="spring" />
+                    <label for="spring">Spring</label>&nbsp;
+                    <input id="html" type="checkbox" value="html" />
+                    <label for="html">HTML/CSS</label>&nbsp;
+                    <input id="jquery" type="checkbox" value="jquery" />
+                    <label for="jquery">JavaScript/JQuery</label>&nbsp;
+                </td>
+            </tr>
+            <!-- 가입경로 부분 셀렉트 사용 -->
+            <tr>
+                <td><label for="ujoin">가입경로</label></td>
+                <td>
+                    <select name="ujoin">
+                        <option>선택하세요.</option>
+                        <option>인터넷 광고</option>
+                        <option>신문</option>
+                        <option>전단지</option>
+                        <option>전화</option>
+                    </select>
+                </td>
+            </tr>
+            <!-- 정보공개여부 부분 셀렉트 사용 -->
+            <tr>
+                <td><label for="uinfo">정보공개여부</label></td>
+                <td>
+                    <select name="uinfo">
+                        <option>선택하세요.</option>
+                        <option>공개</option>
+                        <option>공개거부</option>
+                    </select>
+                </td>
+            </tr>            
+            <!-- 전송버튼 -->
+            <tr >
+                <!-- 가운대로 배치하기 위해 colspan을 통해 병합시켰다.-->
+                <td id="btn" colspan="2" align="center">
+                    <input type="submit" value="&nbsp;회원가입&nbsp;" />
+                    <input type="button" value="&nbsp;취소&nbsp;" />
+                </td>                
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

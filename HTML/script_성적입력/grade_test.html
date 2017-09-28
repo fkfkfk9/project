@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>성적입력</title>
+</head>
+<body>
+    <script>
+        //무한루프 점수를 잘못 입력하면 계속 입력 받는다.
+        while (1) {
+            //prompt()함수를 통해 점수를 입력 받는다.
+            var kor = prompt("국어 점수를 입력하시오. (0~100)");
+            var mat = prompt("수학 점수를 입력하시오. (0~100)");
+            var eng = prompt("영어 점수를 입력하시오. (0~100)");
+            //입력 받은 점수가 0~100일때 break를 통해 무한루프 탈출
+            if (kor >= 0 && kor <= 100 && mat >= 0 && mat <= 100 && eng >= 0 && eng <= 100) {
+                break;
+            } else {//0~100이 아니라면 출력되는 대화문구
+                alert("잘못된 점수를 입력하셨습니다. 처음부터 다시 시작합니다.");
+            }
+        }        
+        //입력받은 3변수는 문자열이기 때문에 숫자로 변환 후 더함
+        var total = Number(kor) + Number(mat) + Number(eng);
+        //3으로 나눠 평균을 구한다.
+        var evg = total / 3;        
+    </script>
+    <!--성적표 테이블을 만든다.-->
+    <table border="1">
+        <!--과목과 점수는 th태그를 사용해 강조한다.-->
+        <tr><th>과목</th><th>점수</th></tr>
+        <tr>
+            <td>국어</td>
+            <!--script를 사용해 변수값을 td값에 넣는다.-->
+            <td><script>document.write(kor);</script></td>
+        </tr>
+        <tr>
+            <td>수학</td>
+            <td>
+            <script>document.write(mat);</script></td>
+        </tr>
+        <tr>
+            <td>영어</td>
+            <td><script>document.write(eng);</script></td>
+        </tr>
+        <tr>
+            <td>총점</td>
+            <td><script>document.write(total);</script></td>
+        </tr>
+        <tr>
+            <td>평균</td>
+            <td><script>document.write(evg);</script></td>
+        </tr>
+    </table>
+</body>
+</html>
