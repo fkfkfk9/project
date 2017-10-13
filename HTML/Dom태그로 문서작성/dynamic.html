@@ -1,0 +1,60 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Dom Teg Test</title>
+</head>
+<body>
+    <script>
+        /***************** 제목 부분 hid *********************/
+        //새로운 h1태그 생성
+        var hid = document.createElement("h1");
+        //h1안에 넣을 텍스트 생성
+        var title_str = document.createTextNode("DOM으로 태그 구성하기");
+        //만들어진 h1태그에 텍스트를 넣어준다.
+        hid.appendChild(title_str);
+        //만들어진 태그들를 HTML에 넣어준다.
+        document.body.appendChild(hid);
+        /***************** 우리나라 꽃은 pid *********************/
+        var pid = document.createElement("p");
+        var pstr = document.createTextNode("우리나라 꽃은?  ");
+        //블론드 속성의 텍스트를 만든다.
+        var bl = document.createElement("b");
+        var bstr = document.createTextNode("무궁화");
+        bl.appendChild(bstr);
+        pid.appendChild(pstr);
+        //p속성의 자식으로 블론드속성의 텍스트를 넣어줌
+        pid.appendChild(bl);
+        document.body.appendChild(pid);
+        /************* 날씨가 춥습니다. 감기조심하세요. pid2 ***************/
+        var pid2 = document.createElement("p");
+        var pstr2 = document.createTextNode("날씨가 춥습니다. 감기조심하세요.");
+        pid2.appendChild(pstr2);
+        document.body.appendChild(pid2);
+        /****************** div태그 부분 divid *******************/
+        var divid = document.createElement("div");
+        //부모 div를 만든다.
+        var div_pid = document.createElement("p");
+        var div_pstr = document.createTextNode("개나리");
+        div_pid.appendChild(div_pstr);
+
+        var div_pid2 = document.createElement("p");
+        var div_pstr2 = document.createTextNode("진달래");
+        div_pid2.appendChild(div_pstr2);
+
+        var div_pid3 = document.createElement("p");
+        var div_pstr3 = document.createTextNode("목련");
+        div_pid3.appendChild(div_pstr3);
+        //div에 자식으로 p태그 3개를 넣어준다.
+        divid.appendChild(div_pid);
+        divid.appendChild(div_pid2);
+        divid.appendChild(div_pid3);
+        document.body.appendChild(divid);
+        /****************** 수고하셨습니다. pid3*******************/
+        var pid3 = document.createElement("p");
+        var pstr3 = document.createTextNode("수고하셨습니다.");
+        pid3.appendChild(pstr3);
+        document.body.appendChild(pid3);
+    </script>
+</body>
+</html>
