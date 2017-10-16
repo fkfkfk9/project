@@ -1,0 +1,50 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>JQuery Test</title>
+    <!--js파일을 첨부 안하므로 웹에서 참조한다.-->
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+    <table>
+        <!--
+            각각 tr태그에 클래스로 묶어준다
+            1,4,6은 class = "yellow"
+            2,5,7은 class = "red"
+            3,8,9는 class = "blue"
+        -->
+        <tr class="red"><td>신형 넥수스 10 미개봉 팝니다.</td><td>62만원</td></tr>
+        <tr class="yellow"><td>갤록시S5 전투용 싸게 처분합니다.</td><td>45만원</td></tr>
+        <tr class="blue"><td>안드로이드 프로그래밍 정복 새 책</td><td>8만원</td></tr>
+        <tr class="red"><td>ASUS 젬북 UX21A full hd, i7 CPU, RAM 4G, 256 SSD</td><td>99만</td></tr>
+        <tr class="yellow"><td>2.5인치 샘송 외장하드 1테라. 좋은 자료 겁나 많음</td><td>12만원</td></tr>
+        <tr class="red"><td>거의 신품급 DSLR. 캐농 750d 듀얼 랜즈</td><td>75만원</td></tr>
+        <tr class="yellow"><td>애뿔 아이뽕6 가개통급. 한개 60만원, 두개 130만원</td><td>60만원</td></tr>
+        <tr class="blue"><td>경희대 앞 넓고 깔끔한 원룸. 초역세권에 신축 풀옵션</td><td>500/50</td></tr>
+        <tr class="blue"><td>스타 2. 자유의 날개 + 군단의 심장 합쳐서 떨이합니다.</td><td>30000</td></tr>
+    </table>
+    <script>
+        /***** 1.DOM으로 backgroundColor 노란색으로 바꾸기 ******/
+        var ylist = document.getElementsByClassName("yellow");
+        //getElementsByClassName메소드를 사용하여 yellow 이름을
+        //정의한 tr들을 배열화해서 ylist에 넣어준다.
+        for (var i = 0; i < ylist.length; i++) {
+            ylist[i].style.backgroundColor = "yellow";
+        }//ylist의 크기만큼 for문을 돌려 백그라운드 컬러 설정변경
+        /*******************************************************/
+
+        /***** 2.jQuery로 backgroundColor 빨간색으로 바꾸기*****/
+        $('.red').css('backgroundColor', 'red');
+        //red클래스를 불러와 css메소드로 백상 변경
+        /*******************************************************/
+
+        /***** 3.DOM객체를 jQuery로 변경하여 backgroundColor 파란색으로 바꾸기*****/
+        $(document.getElementsByClassName('blue')).css('backgroundColor', 'blue');
+        //$는 jQuery함수로 이안에 DOM값인 getElementsByClassName로 blue클래스를 불러온다.
+        //css메소드를 사용하여 바로 백그라운드 생상을 변경한다.
+        /**************************************************************************/
+
+    </script>
+</body>
+</html>
