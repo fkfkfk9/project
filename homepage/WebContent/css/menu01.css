@@ -1,0 +1,65 @@
+﻿#sub_body1 {
+	/*학과 소개 전체 설정*/
+	height : 450px;
+	background-color: white;
+}
+
+#sub_body2 {
+	/*학과장 인사말 전체 설정*/
+	height : 400px;
+	background-color: white;
+}
+
+#sub_body3 {
+	/*교수소개 전체 설정*/
+	height : 700px;
+	background-color: white;
+}
+
+#left_menu { 
+	background-color: white;
+	color: black;
+	float:left; 
+	width:140px;
+	height: 100%;
+	margin-left : -1px;
+	margin-right : 50px;
+}
+
+#menu01_content { 
+	padding : 50px;
+	color : black;
+}
+
+.t_img {
+	width : 120px;
+	height : 140px;
+	border: 1px solid #000066;
+}
+
+.pro {
+	width: 35%;
+	float: left;
+	border : 2px solid #000066;
+	padding : 10px;
+	margin : 20px;
+}
+
+.pro_photo {
+	float: left;
+	width: 130px;
+}
+
+.pro_text {
+	float : left;
+	width : 200px;
+}
+
+.pro_text dt {
+	float : left;
+}
+
+#menu01_text {
+	color: black;
+
+}

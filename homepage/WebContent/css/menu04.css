@@ -1,0 +1,221 @@
+/*갤러리 택스트 이미지. 전부 사용함*/
+#galley_text {
+	margin-top : 50px;
+	margin-left : 65px;
+}
+
+
+
+/*menu04.php start*/
+/*갤러리 게시글 목록 전체*/
+#galley {
+	float : left;
+	width : 95%;
+	height : 100%;
+	margin : 40px;
+}
+
+/*갤러리 게시글 하나의 사진과 글*/
+#galley .picture_div {
+	color : white;
+	float : left;
+	width : 330px;
+	height : 400px;
+	margin : 10px;
+	margin-bottom : 70px;
+}
+
+/*갤러리 게시글 하나의 사진*/
+#galley .picture_div .picture {
+	width : 300px;
+	height : 300px;
+	margin : 15px;
+}
+
+/*갤러리 게시글 하나의 글씨*/
+.text {
+	float : top;
+	text-align : center;
+}
+
+/*겔러리 게시글 하단 페이지 표시 전체*/
+#page_button {
+	float : left;
+	border : 1px solid white;	
+	width:99%;
+}
+
+/*겔러리 게시글 하단 페이지 표시 중 글씨*/
+#page_button #page_num {
+	float:left;
+	width:100%;
+	text-align:center;
+}
+
+/*겔러리 게시글 하단 페이지 표시 중 그림*/
+#button {
+	float : right;
+}
+/*menu04.php end*/
+
+
+
+
+
+
+
+/*view.php start*/
+/*글 전체*/
+#galley_view {
+	float:left;
+	width : 90%;
+	margin : 30px;
+}
+
+/*글의 맨 윗줄 전체*/
+#view_title {
+	height:18px;
+	padding:10px 8px 8px 8px;  
+	border-top:solid 2px #aaaaaa;
+	background-color:#eeeeee;
+	margin-bottom:5px;
+}
+
+/* 제목. 맨 윗줄중 왼쪽의 텍스트임 */
+#view_title1 {
+	float:left;
+	width:70%;
+}
+
+/* 이름, 조회수, 날짜. 맨 윗줄중 오른쪽의 텍스트임 */
+#view_title2 {
+	float:left;
+	width:28%;
+	text-align:right;
+}
+
+/* 사진이미지와 내용 */
+#view_content {
+	width:90%;
+	min-height:200px;
+	padding:15px;
+	overflow:hidden;
+	line-height:150%;
+	border-bottom:solid 1px #cccccc;
+}
+
+/* 사진 이미지 */
+#view_content #view_pic {
+	width:80%;
+	padding : 20px;
+	
+}
+/* 내용 */
+#view_content #view_txt {
+	padding : 20px;
+	
+}
+
+/* 하단에 목록, 수정, 삭제, 글쓰기 버튼 전체 */
+#view_button {
+	width:98%;
+	text-align:right;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+/*view.php end*/
+
+
+
+
+
+/* write_from.php & modify_from.php start */
+/* 글쓰기창 전체(완료, 목록 버튼까지 포함) */
+#galley_write  {
+}
+
+/* 글쓰기 창에서 버튼을 제외한 전체 */
+#write_form {
+	margin-top:10px;
+	margin : 70px;
+}
+
+/* 이름적는 줄 */
+#write_form #write_row1 {
+    width:99%; 
+	height:25px; 
+	margin:2px 0 2px 0; 
+}
+
+/* 제목적는 줄 */
+#write_form #write_row2 {
+    width:99%; 
+	height:25px; 
+	margin:2px 0 2px 0; 
+}
+
+/* 파일 첨부 줄 */
+#write_form #write_row3 {
+    width:99%; 
+	height:25px; 
+	margin:2px 0 2px 0; 
+}
+
+/* 내용적는 줄 */
+#write_form #write_row4 {
+    width:99%; 
+	height:251px; 
+	margin:2px 0 2px 0; 
+}
+
+/* 각 줄 사이에 흰줄이 그어짐 */
+.write_line {
+    width:99%; 
+	border-bottom:solid 1px #cccccc;
+}
+
+/* 왼쪽라인(이름, 제목, 파일첨부, 내용)의 글씨 배경을 설정 */
+#write_form .col1 {
+	float:left;
+	width:120px;
+	text-align:center;
+	padding:5px;
+	background-color:#eeeeee;
+}
+
+/* 내용을 적은 오른쪽 라인의 배경 설정 */
+#write_form .col2 {
+	float:left;
+	margin-left: 8px;
+	margin-top:2px;
+}
+
+/* 효과 없음 */
+#write_form #write_row1 .col2 {
+	float:left;
+	margin-top:6px;
+}
+
+/* 효과없음 */
+#write_form #write_row1 .col3 {
+	float:left;
+	margin-top:4px;
+	margin-left:100px;
+}
+
+/* 왼쪽 라인의 내용박스 크기를 조절 */
+#write_form #write_row4 .col1 {
+	height:126px;
+	padding-top:120px;
+}
+
+/* 하단에 완료, 목록 버튼 */
+#write_button {
+	margin-top:15px;
+	width:97%;
+	text-align:right;
+}
+/* write_from.php & modify_from.php end */
+
+
+

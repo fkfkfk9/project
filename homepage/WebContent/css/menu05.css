@@ -1,0 +1,136 @@
+#col {
+	width:980px;
+	min-height:558px;
+	float:left;
+	margin-left:15px;
+	background-image:url("C:/APM_Setup/htdocs/mobilesoftware/img/menu05/menu05_bgcolor.png") ;
+
+/*	border:solid 1px #cccccc; */
+}
+
+#content #col #title{
+	margin-top:30px;
+	height:30px;
+	border-bottom:solid 1px #cccccc;
+}
+
+#menu05_row1 {
+	height:155px;
+/*	border-bottom:solid 1px #dddddd;   */
+}
+
+#menu05_01 {
+	float:left;
+}
+
+#menu05_02 {
+	float:left;
+	margin-top:5px;
+	margin-left:5px;
+}
+
+
+#menu05_row1 #menu05_writer {
+	margin-top:10px; 
+	margin-bottom:10px;   
+}
+
+#memo05_01 textarea {
+	border:solid 1px #cccccc;
+}
+
+#menu05_writer_title {
+	height:26px;
+	padding-top:10px; 
+	margin-bottom:10px;
+	border-top:solid 1px #cccccc;
+	border-bottom:dotted 1px #cccccc;
+}
+
+#menu05_writer_title ul {
+	margin-left:5px;
+}
+
+#menu05_writer_title li {
+	display:inline;
+}
+
+#menu05_writer_title #writer_title2 {
+	margin-left:10px;
+}
+
+#menu05_writer_title #writer_title3 {
+	margin-left:20px;
+}
+
+#menu05_writer_title #writer_title4 {
+	margin-left:540px;
+}
+
+#menu05_content {
+	margin-left:20px;
+	width:800px;
+}
+
+#ripple {
+	margin-top:20px;
+
+/*	overflow:hidden; */
+}
+
+#ripple1 {
+	float:left;
+	font-weight:bold;
+	text-decoration:underline;
+}
+
+#ripple2 {
+	float:left;
+	padding:10px;
+	width:92%;
+	margin-left:10px;
+	background-color:#eeeeee;
+}
+
+#ripple_title {
+	padding-top:10px;
+	padding-left:10px;
+}
+
+#ripple_title li {
+	display:inline;
+}
+
+#ripple_title li#mdi_del {
+	padding-left:20px;
+}
+
+#ripple_content {
+	padding-top:10px;
+	padding-left:10px;
+	padding-bottom:10px;
+	border-bottom:dotted 1px #cccccc;
+}
+
+#ripple_insert {
+	margin-top:10px;
+}
+
+#ripple_textarea {
+	float:left;
+}
+
+#ripple_textarea textarea{
+	border:solid 1px #cccccc;
+}
+
+#ripple_button {
+	float:left;
+	margin-left:5px;
+	margin-top:15px;
+}
+
+#page_num {
+	margin-top:10px;
+	text-align:center;
+}

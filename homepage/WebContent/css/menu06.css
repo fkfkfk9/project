@@ -1,0 +1,291 @@
+/* menu06.php start */
+/* 글 목록과 버튼까지 */
+#main {
+	width : 100%;
+	height : auto;
+}
+
+/* 좌측 메뉴 */
+#left_menu { 
+	border : 1px solid white;
+	margin-left : -1px; 
+	width : 15%;
+	height : 600px;
+	float : left;
+}
+
+/* 좌측 메뉴의 글씨 */
+.menus06 {
+	margin-top : 30px;
+	text-align : center;
+}
+
+/* Q & A 글씨 와 자주묻는 게시판 이미지 전체 */
+#img_list {
+	padding : 50px;
+	padding-bottom : 20px;
+	border : 1px solid green;
+}
+
+/* Q & A 이미지 */
+#img_list  #main_text{
+	margin-left : 10px;
+}
+
+/* 자주묻는 게시판 이미지 */ 
+#img_list #sub_text{
+	margin-left : 10px;
+	margin-top : 10px;
+}
+
+/* 번호, 제목, 글쓴이, 등록일, 조회 이미지를 담는 전체 바 */
+#list_top_title {
+	height:30px;
+	width : 84.5%;
+	border : solid 2px yellow;
+	float : left;
+}
+
+/* 번호 이미지 */
+#list_top_title #list_title1 {
+	float : left;
+	margin-left:2%;
+}
+
+/* 제목 이미지 */
+#list_top_title #list_title2 {
+	float : left;
+	margin-left:20%;
+}
+
+/* 글쓴이 이미지 */
+#list_top_title #list_title3 {
+	float : left;
+	margin-left:41%;
+}
+
+/* 등록일 이미지 */
+#list_top_title #list_title4 {
+	float : left;
+	margin-left:7%;
+}
+
+/* 조회 이미지 */
+#list_top_title #list_title5 {
+	float : left;
+	margin-left:8.5%;
+}
+
+/* 게시글의 정보 전체 */
+#list_item {
+	float : left;
+	height:18px;
+	margin-top:2px;
+	padding:6px;  
+	border-bottom:solid 1px white;
+}
+
+/* 번호 글 */
+#list_item #list_item1{
+	float:left;
+	width:60px;
+	text-align:center;
+}
+
+/* 제목 글 */
+#list_item #list_item2{
+	float:left;
+	width:580px;
+}
+
+/* 글쓴이 글 */
+#list_item #list_item3{
+	float:left;
+	width:90px;
+	text-align:center;
+}
+
+/* 등록일 글 */
+#list_item #list_item4{
+	float:left;
+	width:140px;
+	text-align:center;
+}
+
+/* 조회 글 */
+#list_item #list_item5{
+	float:left;
+	width:70px;
+	text-align:center;
+}
+
+/* Q&A 게시글 하단 페이지 표시 전체*/
+#page_button {
+	float : left;
+	border : 1px solid white;	
+	width:99%;
+}
+
+/* Q&A 게시글 하단 페이지 표시 중 글씨*/
+#page_button #page_num {
+	float:left;
+	width:100%;
+	text-align:center;
+}
+
+/* Q&A 게시글 하단 페이지 표시 중 그림*/
+#button {
+	float : right;
+}
+/* menu06.php end */
+
+
+
+/* view.php start */
+#view_comment {
+	padding:10px;
+}
+
+#view_title {
+	float:left;
+	height:18px;
+	width : 80%;
+	margin:10px; 
+	border:solid 2px yellow;
+	background-color:#eeeeee;
+	float : left;
+	margin-bottom:5px;
+}
+
+#view_title1 {
+	float:left;
+	width:70%;
+}
+
+#view_title2 {
+	float:left;
+	width:28%;
+	text-align:right;
+}
+
+#view_file {
+	float : left;
+	border:solid 2px yellow;
+	margin:10px; 
+	width : 80%;
+}
+
+#view_content {
+	width : 80%;
+	height : 345px;
+	float : left;
+	border:solid 2px yellow;
+	margin : 10px;
+	overflow : auto;
+}
+
+#view_button {
+	width:95%;
+	text-align:right;
+	margin-top:15px;
+	margin-bottom:15px;
+}
+/* view.php end */
+
+
+
+
+
+/* write_from.php & modify_from.php start */
+/* 글쓰기창 전체(완료, 목록 버튼까지 포함) */
+#galley_write  {
+	float : left;
+}
+
+#qa_write {
+	margin-left : 50px;
+	margin-top : 50px;
+}
+
+/* 글쓰기 창에서 버튼을 제외한 전체 */
+#write_form {
+	margin : 50px;
+	margin-top:10px;
+}
+
+/* 이름적는 줄 */
+#write_form #write_row1 {
+    width:99%; 
+	height:25px; 
+	margin:2px 0 2px 0; 
+}
+
+/* 제목적는 줄 */
+#write_form #write_row2 {
+    width:99%; 
+	height:25px; 
+	margin:2px 0 2px 0; 
+}
+
+/* 파일 첨부 줄 */
+#write_form #write_row3 {
+    width:99%; 
+	height:25px; 
+	margin:2px 0 2px 0; 
+}
+
+/* 내용적는 줄 */
+#write_form #write_row4 {
+    width:100%; 
+	height:251px; 
+	margin:2px 0 2px 0; 
+}
+
+/* 각 줄 사이에 흰줄이 그어짐 */
+.write_line {
+    width:99%; 
+	border-bottom:solid 1px #cccccc;
+}
+
+/* 왼쪽라인(이름, 제목, 파일첨부, 내용)의 글씨 배경을 설정 */
+#write_form .col1 {
+	float:left;
+	width:120px;
+	text-align:center;
+	padding:5px;
+	background-color:#eeeeee;
+}
+
+/* 내용을 적은 오른쪽 라인의 배경 설정 */
+#write_form .col2 {
+	float:left;
+	margin-left: 8px;
+	margin-top:2px;
+}
+
+/* 효과 없음 */
+#write_form #write_row1 .col2 {
+	float:left;
+	margin-top:6px;
+}
+
+/* 효과없음 */
+#write_form #write_row1 .col3 {
+	float:left;
+	margin-top:4px;
+	margin-left:100px;
+}
+
+/* 왼쪽 라인의 내용박스 크기를 조절 */
+#write_form #write_row4 .col1 {
+	height:126px;
+	padding-top:120px;
+}
+
+/* 하단에 완료, 목록 버튼 */
+#write_button {
+	margin-top:15px;
+	width:97%;
+	text-align:right;
+}
+/* write_from.php & modify_from.php end */
