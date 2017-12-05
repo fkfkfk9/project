@@ -84,6 +84,6 @@ CREATE SEQUENCE sequ_menu02_num;
   hp    varchar2(20)  not null,
   email varchar2(80),
   regist_day varchar2(20),
-  level NUMBER,
+  m_level NUMBER,
   primary key(id)
   );
