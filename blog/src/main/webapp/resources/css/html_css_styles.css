@@ -1,0 +1,86 @@
+#list_article{/*�����Խ����� ul�κ�*/
+	background-color: #a0d1f1;
+	margin-bottom: 1%;
+    margin-left:5%;
+    border-bottom: 1px solid #000000;
+}
+#list_article p{/*�����Խ��ǿ� ul�ȿ��� p�±׸� ����ϴ� ���*/
+	text-align: center;
+	padding-top: 5%;
+}
+#write_btn{/*���� �Խ��� �۾����� ��ư�� �����ϴ� li��*/
+	padding-left: 20% 
+}
+#write_form_ul{/*�۾��� ������ ul*/
+	background-color: #a0d1f1;
+	width:60%;
+}
+#li_subject{/*�۾��� ������ ������ li*/
+	padding-top: 50px;
+}
+.article_ul{/*�����Խ����� ul*/
+	border-top: 1px solid;
+	padding: 5px 0px 5px 0px;
+	margin: 0px;
+}
+.write_date{/*�����Խ����� ul�� ��¥*/
+	float:right;
+	color:gray;
+}
+.writer_sbuject{/*�����Խ����� ul�� ����*/
+	font-style: italic;
+	color:#db6a0f;
+	font-size: 13px;
+}
+.writer_sbuject a{text-decoration: none; color:#db6a0f}
+.writer_sbuject a:hover {text-decoration: none; color:#db6a0f}
+.writer_sbuject a:visited {text-decoration: none; color:#db6a0f}
+.writer_sbuject a:active {text-decoration: none; color:#db6a0f}
+
+.writer_id{/*�����Խ����� ul�� ���̵�*/
+	float:left;
+	width: 10%;
+}
+.write_pre{/*�����Խ����� ul�� ��������*/
+	margin-top: 0px;
+	padding-bottom:0px;
+	margin-bottom:0px;
+	padding-left: 10%; 
+}
+.write_li{/*�����Խ����� id, ��¥, ������ ����ִ� ���� li*/
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+#jump.w1, .w2{/*����¡ ��ư*/
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}
+
+.pagination {
+	margin: 0;
+    padding: 10px 0px 0px 300px;
+    list-style-type: none;
+    overflow: hidden;
+    height: 50px;
+}
+.pagination li{
+	display: inline;
+	padding : 10px 10px 10px 10px;
+	background-color: #ffffff;
+	border: 1px solid #c0c0c0;	
+}
+
+.pagination li a{
+	text-decoration: none; 	
+	color:#db6a0f;
+	font-size: 15px;
+	text-align: center;
+}
+.pagination li a:hover {text-decoration: none; color:#db6a0f}
+.pagination li a:visited {text-decoration: none; color:#db6a0f}
+.pagination li a:active {text-decoration: none; color:#db6a0f}
+
+#search_div{
+	float: right;
+}

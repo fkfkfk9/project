@@ -1,0 +1,52 @@
+#list_article{/*자유게시판의 ul부분*/
+	background-color: #a0d1f1;
+	margin-bottom: 5%;
+    margin-left:5%;
+    border-bottom: 1px solid #000000;
+}
+#list_article p{/*자유게시판에 ul안에서 p태그를 사용하는 경우*/
+	text-align: center;
+	padding-top: 5%;
+}
+#write_btn{/*자유 게시판 글쓰기의 버튼이 존재하는 li열*/
+	padding-left: 20% 
+}
+#write_form_ul{/*글쓰기 폼에서 ul*/
+	background-color: #a0d1f1;
+	width:60%;
+}
+#li_subject{/*글쓰기 폼에서 제목열의 li*/
+	padding-top: 50px;
+}
+.article_ul{/*자유게시판의 ul*/
+	border-top: double;
+	padding: 0px;
+	margin: 0px;
+}
+.write_date{/*자유게시판의 ul의 날짜*/
+	float:right;
+	color:gray;
+}
+.writer_sbuject{/*자유게시판의 ul의 제목*/
+	font-style: italic;
+	color:sandybrown;
+}
+.writer_id{/*자유게시판의 ul의 아이디*/
+	float:left;
+	width: 10%;
+}
+.write_pre{/*자유게시판의 ul의 본문내용*/
+	margin-top: 0px;
+	padding-bottom:0px;
+	margin-bottom:0px;
+	padding-left: 10%; 
+}
+.write_li{/*자유게시판의 id, 날짜, 제목이 들어있는 열의 li*/
+	margin-bottom: 0px;
+	padding-bottom: 0px;
+}
+#jump.w1, .w2{/*페이징 버튼*/
+	padding: 0px;
+	margin: 0px;
+	text-align: center;
+}

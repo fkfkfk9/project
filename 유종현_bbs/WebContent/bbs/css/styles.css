@@ -1,0 +1,174 @@
+html,body{
+    margin:0;
+    padding:0
+}
+body {
+    font: 86% arial,sans-serif;
+    text-align: center;    
+}
+p{
+    margin:0 10px 10px;
+}
+div#container {
+    text-align: left;
+    margin: 0 auto;
+    background-color: #f6f8c5;
+}
+
+header {
+    background-image: url(../img/header_img.jpg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    border-radius : 5px;
+    padding-bottom :3.3%;
+    padding-top : 3.3%;    
+}
+    header h1 {
+        height: 80px;
+        line-height: 80px;
+        margin: 0;
+        margin-left: 10%;
+        padding-left: 10px;
+        font-family: Arial;        
+        text-shadow: 0px 1px 1px #000;
+    }
+    header h1 a {
+        text-decoration: none;
+        text-decoration-color: cornflowerblue;
+    }        
+        header h1 a:visited {text-decoration: none;color: cornflowerblue;}
+        header h1 a:active {text-decoration: none;color: cornflowerblue;}
+        header h1 a:active {text-decoration: none;color: cornflowerblue;}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+    background-color: gold;
+}
+
+    nav ul li {
+        float: left
+    }
+
+        nav ul li a, .dropbtn {
+            padding: 14px 16px;
+            text-decoration: none;
+            color: cornflowerblue;
+            text-shadow: 0px 1px 1px #000;
+            font-size: 130%;
+            text-align: center;
+            display: block;
+        }
+
+            nav ul li a:hover:not(.active), .dropdown:hover .dropbtn {
+                background-color: sandybrown;
+            }
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f6f8c5;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+    .dropdown-content a {
+        color: cornflowerblue;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        text-align: left;
+    }
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+/*해상도 별로 설정을 바꾼다.*/
+/*스마트폰 해상도*/
+@media (max-width: 499px) {
+    nav ul li {
+        float: none;
+    }
+    li.dropdown {}
+    header h1 {        
+        font-size: 170%;        
+    }
+    div#container {
+        width: 100%;
+    }
+}
+/*테블릿 해상도*/
+@media (min-width: 500px) and (max-width: 999px) {
+    nav ul li {
+        float: none;
+    }
+    li.dropdown {}
+    header h1 {        
+        font-size: 200%;        
+    }
+    div#container {
+        width: 100%;
+    }
+}
+/*일반pc 해상도*/
+@media (min-width: 1000px) {
+    li.dropdown {
+        display: inline-block;
+    }
+    header h1 {
+        font-size: 230%;
+    }
+    body {        
+        background-image: url(../img/background_img.jpg);
+        background-size: auto;
+    }
+    div#container {        
+        width: 80%;        
+    }
+}
+section {
+    width:85%;
+    padding:5%;
+    float:left;
+}
+section p{
+    line-height:1.4;
+    font-size:120%
+}
+article h2 {
+    text-shadow: 0px 1px 1px #000;
+    color: aquamarine;
+}
+article ul {
+    list-style-type: none;
+}
+article ul li{
+	padding-bottom: 22px;
+}
+.spancss{
+	float:left;
+	width:100px;
+	font-size: 20px;
+}
+article ul li input{
+	border: 1px solid #bcbcbc;
+  	border-radius: 0px;
+  	-webkit-appearance: none;
+  	height: 30px;
+  	-webkit-box-sizing: border-box;
+  	-moz-box-sizing: border-box;
+  	box-sizing: border-box;	
+}
+footer {
+    background: #000000;
+    clear: both;
+    width: 100%
+}
+footer p, address{
+    margin:0;
+    padding:5px 10px;
+    color:aliceblue;
+    text-align:center
+}
